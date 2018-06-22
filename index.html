@@ -27,14 +27,33 @@
                     </li>
                 </ul>
 
-                <ul id="theme_list" class="tema_container">
-                    <li class="theme_list_item cardTemplate" data-theme="tema_1" hidden>
-                        <div class="caption">
-                            <h3 class="titles2">Titulo del tema 1</h3>
-                            <div class="last_updated" hidden></div>
-                        </div>                        
-                    </li>
-                </ul>
+                <div class="slider-btn-hldr slider-btn-hldr-left">
+                    <button id="left-btn" class="slider-btn" style="display: none;">
+                        <svg viewBox="0 0 256 256">
+                            <polyline fill="none" stroke="white" stroke-width="16" points="184,16 72,128 184,240"></polyline>
+                        </svg>
+                    </button>
+                </div><!-- BUTTON LEFT -->
+
+                <div id="carousel_container" class="carousel">
+                    <ul id="theme_list" class="tema_container">
+                        <li class="theme_list_item cardTemplate" data-theme="tema_1" hidden>
+                            <div class="caption">
+                                <h3 class="titles2">Titulo del tema 1</h3>
+                                <div class="last_updated" hidden></div>
+                            </div>                        
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="slider-btn-hldr slider-btn-hldr-right">
+                    <button id="right-btn" class="slider-btn" style="display: block;">
+                        <svg viewBox="0 0 256 256">
+                            <polyline fill="none" stroke="white" stroke-width="16" points="72,16 184,128 72,240"></polyline>
+                        </svg>
+                    </button>
+                </div><!-- BUTTON RIGHT -->
+
 
                 <section id="player_container"></section>
             </section>
