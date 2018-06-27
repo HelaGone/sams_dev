@@ -5,8 +5,10 @@ h1, h2, h3{margin:0;}
 .titles{font-family:sans-serif; font-size: 4em;color:#fff;}
 .titles2{font-family:sans-serif; font-size: 1.5em;color:#fff;}
 .descriptions{font-family:sans-serif; font-size: 1em; color:#fff;}
+.btn_regreso{padding:24px 0px 24px 0px;display: block;width:80px;}
+.btn_regreso button{background:none; border-style: none;}
 
-#main_section{padding:80px;}
+#main_section{padding:40px 80px;}
 /*
 #main_section ul{display:flex;justify-content: space-between;margin:0;padding:0;list-style: none;position:relative;}
 #main_section ul li{position:relative;}
@@ -21,11 +23,11 @@ h1, h2, h3{margin:0;}
 .slider-btn-hldr-left {left: 80px;}
 .slider-btn-hldr-right {right: 96px;}
 .slider-btn-hldr {bottom: 0;display: block;padding: 0;width: 24px;position: absolute;top: 54%;z-index: 1;}
-.slider-btn {background-color: transparent;border: 0 none;color: buttontext;cursor: pointer;display: block;}
+.slider-btn {background-color: transparent;border: 0 none;color: buttontext;cursor: pointer;display: block;outline: none;}
 /*#left-btn {display: none;}*/
 .slider-btn svg{width: 24px;height: 24px;}
 
-#theme_title{margin-bottom: 160px;}
+#theme_title{margin-bottom:100px;}
 
 
 /*MEDIA QUERIES*/
