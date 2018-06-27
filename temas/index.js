@@ -19,52 +19,8 @@
 
 	var themeTitle = document.getElementById('theme_title');
 	parameterNme = parameterNme.replace(new RegExp('-', 'g') , ' ');
-	themeTitle.textContent = parameterNme.capitalize();
-
-	// console.log(theme_title);
-
-	// switch(parameter){
-	// 	case '1':
-	// 	console.log('https://localhost/noticieros/wp-json/news/v1/topico/'+parameterNme);
-	// 	break;
-	// 	case '2':
-	// 	console.log('https://localhost/noticieros/wp-json/news/v1/topico/'+parameterNme);
-	// 	break;
-	// 	case '3':
-	// 	console.log('https://localhost/noticieros/wp-json/news/v1/topico/'+parameterNme);
-	// 	break;
-	// 	case '4':
-	// 	console.log('https://localhost/noticieros/wp-json/news/v1/topico/'+parameterNme);
-	// 	break;
-	// 	case '5':
-	// 	console.log('https://localhost/noticieros/wp-json/news/v1/topico/'+parameterNme);
-	// 	break;
-	// 	case '6':
-	// 	console.log('https://localhost/noticieros/wp-json/news/v1/topico/'+parameterNme);
-	// 	break;
-	// 	case '7':
-	// 	console.log('https://localhost/noticieros/wp-json/news/v1/topico/'+parameterNme);
-	// 	break;
-	// 	case '8':
-	// 	console.log('https://localhost/noticieros/wp-json/news/v1/topico/'+parameterNme);
-	// 	break;
-	// 	case '9':
-	// 	console.log('https://localhost/noticieros/wp-json/news/v1/topico/'+parameterNme);
-	// 	break;
-	// 	case '10':
-	// 	console.log('https://localhost/noticieros/wp-json/news/v1/topico/'+parameterNme);
-	// 	break;
-	// 	case '11':
-	// 	console.log('https://localhost/noticieros/wp-json/news/v1/topico/'+parameterNme);
-	// 	break;
-	// 	case '12':
-	// 	console.log('https://localhost/noticieros/wp-json/news/v1/topico/'+parameterNme);
-	// 	break;
-	// 	case '13':
-	// 	console.log('https://localhost/noticieros/wp-json/news/v1/topico/'+parameterNme);
-	// 	break;
-	// }
-
+	// themeTitle.textContent = parameterNme.capitalize();
+	themeTitle.textContent = parameterNme.toUpperCase();
 
 	const mysiema = new Siema({
 	    selector: '.siema',
