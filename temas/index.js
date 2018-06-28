@@ -41,9 +41,9 @@
 	var btnPrev = document.getElementById('left-btn');
 	btnPrev.addEventListener('click', () => mysiema.prev());
 
-	var btnReturn = document.getElementById('btn_return');
-	btnReturn.addEventListener('click', function(){
-		window.history.back();
-	});
+	// var btnReturn = document.getElementById('btn_return');
+	// btnReturn.addEventListener('click', function(){
+	// 	window.history.back();
+	// });
 	
 })();

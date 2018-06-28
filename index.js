@@ -22,10 +22,12 @@
 			switch(data){
 				case 'las-estrellas':
 					console.log(data);
+					window.location = 'player';
 					//Change screen and run channel las estrellas
 					break;
 				case 'foro-tv':
 					console.log(data);
+					window.location = 'player';
 					//Change screen and run channel foro tv
 					break;
 			}
