@@ -1,54 +1,93 @@
 { "temas":
 	[{
-		"id":1,
-		"tema_nme": "política" 
+		"id":"1",
+		"tema_nme": "Política",
+		"thumb": "generic.jpg",
+		"date": "Mon, 02 Jul 2018 21:39:45 -0500",
+		"slug":"politica"
 	},
 	{ 
-		"id":2,
-		"tema_nme":"debates-y-entrevistas"
+		"id":"2",
+		"tema_nme":"Debates y entrevistas",
+		"thumb": "generic.jpg",
+		"date": "Mon, 02 Jul 2018 21:39:45 -0500",
+		"slug":"debates-y-entrevistas"
 	}, 
 	{
-		"id":3,
-		"tema_nme": "crimen-y-seguridad"
+		"id":"3",
+		"tema_nme": "Crimen y Seguridad",
+		"thumb": "generic.jpg",
+		"date": "Mon, 02 Jul 2018 21:39:45 -0500",
+		"slug":"crimen-y-seguridad"
 	}, 
 	{
-		"id":4,
-		"tema_nme":"conflictos-armados"
+		"id":"4",
+		"tema_nme":"Conflictos Armados",
+		"thumb": "generic.jpg",
+		"date": "Mon, 02 Jul 2018 21:39:45 -0500",
+		"slug":"conflictos-armados"
 	}, 
 	{
-		"id":5,
-		"tema_nme":"corrupción"
+		"id":"5",
+		"tema_nme":"Corrupción",
+		"thumb": "generic.jpg",
+		"date": "Mon, 02 Jul 2018 21:39:45 -0500",
+		"slug":"corrupcion"
 	}, 
 	{
-		"id":6,
-		"tema_nme":"economía"
+		"id":"6",
+		"tema_nme":"Economía",
+		"thumb": "generic.jpg",
+		"date": "Mon, 02 Jul 2018 21:39:45 -0500",
+		"slug":"economia"
 	}, 
 	{
-		"id":7,
-		"tema_nme":"entretenimiento"
+		"id":"7",
+		"tema_nme":"Entretenimiento",
+		"thumb": "generic.jpg",
+		"date": "Mon, 02 Jul 2018 21:39:45 -0500",
+		"slug":"entretenimiento"
 	}, 
 	{
-		"id":8,
-		"tema_nme":"ciencia-y-tecnología"
+		"id":"8",
+		"tema_nme":"Ciencia y tecnología",
+		"thumb": "generic.jpg",
+		"date": "Mon, 02 Jul 2018 21:39:45 -0500",
+		"slug":"ciencia-y-tecnologia"
 	}, 
 	{
-		"id":9,
-		"tema_nme":"ecología"
+		"id":"9",
+		"tema_nme":"Ecología",
+		"thumb": "generic.jpg",
+		"date": "Mon, 02 Jul 2018 21:39:45 -0500",
+		"slug":"ecologia"
 	},
 	{
-		"id":10,
-		"tema_nme":"salud"
+		"id":"10",
+		"tema_nme":"Salud",
+		"thumb": "generic.jpg",
+		"date": "Mon, 02 Jul 2018 21:39:45 -0500",
+		"slug":"salud"
 	}, 
 	{
-		"id":11,
-		"tema_nme":"arte-y-cultura"
+		"id":"11",
+		"tema_nme":"Arte y cultura",
+		"thumb": "generic.jpg",
+		"date": "Mon, 02 Jul 2018 21:39:45 -0500",
+		"slug":"arte-y-cultura"
 	}, 
 	{
-		"id":12,
-		"tema_nme":"por-el-planeta"
+		"id":"12",
+		"tema_nme":"Por el planeta",
+		"thumb": "generic.jpg",
+		"date": "Mon, 02 Jul 2018 21:39:45 -0500",
+		"slug":"por-el-planeta"
 	},
 	{ 
-		"id":13,
-		"tema_nme":"deportes"
+		"id":"13",
+		"tema_nme":"Deportes",
+		"thumb": "generic.jpg",
+		"date": "Mon, 02 Jul 2018 21:39:45 -0500",
+		"slug":"deportes"
 	}]
 }

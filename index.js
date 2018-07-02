@@ -10,9 +10,64 @@
 		list_container: document.querySelector('#theme_list')
 	}
 	var myItems = new Object();
-
 	var mainList = document.getElementById('list_main_channels');
 	var list_item = mainList.querySelectorAll(".main_channel_item");
+
+
+	/*
+		AJAX FOR CATEGORY
+	*/
+	var xmlhttp = new XMLHttpRequest();
+	var url = './assets/temas.json';
+
+	xmlhttp.onreadystatechange = function(){
+		if(this.readyState == 4 && this.status == 200){
+			var jsonArr = JSON.parse(this.responseText);
+			buildThemeList(jsonArr);
+		}
+	};
+	xmlhttp.open('GET', url, true);
+	xmlhttp.send();
+
+
+	function buildThemeList(arr){
+		console.log(arr.temas);
+
+		var themeArray = arr.temas;
+		var divContainer = document.getElementById('theme_list');
+		var innerContainer = divContainer.childNodes[0];
+
+		themeArray.forEach(function(value, key){
+			// console.log(value);
+			var item = document.createElement('div');
+			item.id = value.id;
+			item.setAttribute('class','theme_list_item');
+			item.setAttribute('data-theme', value.slug);
+			item.setAttribute('data-refid', value.id);
+			item.style.backgroundImage = 'url("./images/'+value.thumb+'/")';
+
+			var itemCaption = document.createElement('div');
+			itemCaption.setAttribute('class', 'caption');
+			item.appendChild(itemCaption);
+
+			var itemTitle = document.createElement('h3');
+			itemTitle.setAttribute('class', 'titles2');
+			itemTitle.innerHTML = value.tema_nme;
+			itemCaption.appendChild(itemTitle);
+
+			var itemDate = document.createElement('div');
+			itemDate.setAttribute('class', 'last_updated');
+			itemDate.innerHTML = value.date;
+			itemDate.style.display = 'none';
+			itemCaption.appendChild(itemDate);
+
+			//Last step add item to list container
+			innerContainer.appendChild(item);
+		});		
+
+
+	}
+
 
 	for(var i=0; i<list_item.length; i++){
 		list_item[i].addEventListener("click", function(){
@@ -43,26 +98,6 @@
 		var reference_nme = event.target.getAttribute('data-theme');
 		window.location = 'temas/?ref='+reference+'&refnme='+reference_nme;
 	});
-
-
-	const mysiema = new Siema({
-	    selector: '.siema',
-	    duration: 200,
-	    easing: 'ease-out',
-	    perPage: 5,
-	    startIndex: 0,
-	    draggable: true,
-	    multipleDrag: true,
-	    threshold: 20,
-	    loop: false,
-	    rtl: false,
-	});
-
-	var btnNext = document.getElementById('right-btn');
-	btnNext.addEventListener('click', ()=> mysiema.next());
-
-	var btnPrev = document.getElementById('left-btn');
-	btnPrev.addEventListener('click', () => mysiema.prev());
 	
 
 })();
