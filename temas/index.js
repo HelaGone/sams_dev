@@ -40,8 +40,7 @@
 	xmlhttp.send();
 
 	function buildThemeList(arr){
-		console.log(arr);
-
+		// console.log(arr);
 		var themeArray = arr;
 		var divContainer = document.getElementById('video_list');
 		var innerContainer = divContainer.childNodes[0];
