@@ -4,7 +4,10 @@
 #main_section ul{display:flex;justify-content: space-between;margin:0;padding:0;list-style: none;position:relative;}
 #main_section ul li{position:relative;}
 #main_section ul li div.caption{position: absolute;bottom: 24px;left:24px;}
-#main_section ul#list_main_channels li{width:calc(50% - 0px);min-height: 600px;background-image: url(../images/generic.jpg);background-size: cover; background-repeat: no-repeat;background-position: center;}
+#main_section ul#list_main_channels li{width:calc(50% - 0px);min-height: 600px;}
+#main_section ul#list_main_channels li h2.titles{text-shadow: }
+#main_section ul#list_main_channels li.forotv{background-image: url(../images/forotv.png);background-size: cover; background-repeat: no-repeat;background-position: right;}
+#main_section ul#list_main_channels li.lasestrellas{background-image: url(../images/lasestrellas.png);background-size: cover; background-repeat: no-repeat;background-position: center;}
 
 /*TEMAS CAROUSEL*/
 .temas_container_title{margin-top:60px;color:#fff;}

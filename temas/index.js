@@ -23,9 +23,6 @@
 	themeTitle.textContent = parameterNme.toUpperCase();
 
 	/*AJAX FOR VIDEOS BY THEME*/
-	/*
-		AJAX FOR TEMA
-	*/
 	var xmlhttp = new XMLHttpRequest();
 	// var url = 'https://forotv.mx/wp-json/forotv/v1/topicos/';
 	var url = 'https://www.forotv.mx/wp-json/forotv/v1/topic/'+parameter;
@@ -93,7 +90,7 @@
 		    draggable: true,
 		    multipleDrag: true,
 		    threshold: 20,
-		    loop: false,
+		    loop: true,
 		    rtl: false,
 		});
 
