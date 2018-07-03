@@ -3,8 +3,8 @@ body{background-color:#000;background-image: url(../images/generic.jpg);height: 
 #main_section{padding:40px 80px;}
 
 /*TEMAS*/
-.tema_container div.theme_list_item{min-height: 300px;background-image: url(../images/generic.jpg);background-size: cover; background-repeat: no-repeat;background-position: center;position: relative;}
-.tema_container div.theme_list_item div.caption{position: absolute;bottom: 24px; left:24px;}
+.tema_container div.theme_list_item{min-height: 400px;margin:0px 10px;border-radius: 5px;background-size: cover; background-repeat: no-repeat;background-position: center;position: relative;}
+.tema_container div.theme_list_item div.caption{position: absolute;bottom: 24px; left:0px;}
 
 /*BUTTONS*/
 .slider-btn-hldr-left {left: 80px;}
@@ -16,5 +16,5 @@ body{background-color:#000;background-image: url(../images/generic.jpg);height: 
 /*MEDIA QUERIES*/
 @media only screen and (max-width: 1290px){
 	/*#main_section ul#list_main_channels li{min-height:380px;}*/
-	#main_section div#video_list div.theme_list_item{min-height: 180px;}
+	#main_section div#video_list div.theme_list_item{min-height: 300px;}
 }
