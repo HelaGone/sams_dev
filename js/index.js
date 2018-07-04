@@ -18,8 +18,8 @@
 		AJAX FOR TEMA
 	*/
 	var xmlhttp = new XMLHttpRequest();
-	// var url = 'https://forotv.mx/wp-json/forotv/v1/topicos/';
-	var url = 'https://localhost/forotvmx/wp-json/forotv/v1/topicos/';
+	var url = 'https://forotv.mx/wp-json/forotv/v1/topicos/';
+	// var url = 'https://localhost/forotvmx/wp-json/forotv/v1/topicos/';
 	var jsonArr = '';
 
 	xmlhttp.onreadystatechange = function(){
@@ -35,10 +35,12 @@
 
 	function buildThemeList(arr){
 		// console.log(arr.temas);
+		var colorArray = ["#3E95FF","#1D6CCC","#FF4F3E","#E3FF57","#B2271A","#DEFF3E","#7EBEE8","#98B21A","#FF6757","#1A5EB2","#FF503E","#AECC1D","#57A3FF","#922323","#E4E365","#DF4C4C","#297AAC","#2B6A92","#CC2D1D"];
+
 		var themeArray = arr.temas;
 		var divContainer = document.getElementById('theme_list');
 		var innerContainer = divContainer.childNodes[0];
-
+		var counter = 0;
 		themeArray.forEach(function(value, key){
 			// console.log(value);
 			var item = document.createElement('div');
@@ -46,7 +48,7 @@
 			item.setAttribute('class','theme_list_item');
 			item.setAttribute('data-theme', value.slug);
 			item.setAttribute('data-refid', value.id);
-			item.style.backgroundImage = 'url("./images/'+value.thumb+'")';
+			item.style.backgroundColor = colorArray[counter];
 
 			var itemCaption = document.createElement('div');
 			itemCaption.setAttribute('class', 'caption');
@@ -65,6 +67,7 @@
 
 			//Last step add item to list container
 			divContainer.appendChild(item);
+			counter++;
 		});
 	}
 

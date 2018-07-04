@@ -4,7 +4,7 @@ body{background-color:#000;background-image: url(../images/generic.jpg);height: 
 
 /*TEMAS*/
 .tema_container div.theme_list_item{min-height: 400px;margin:0px 10px;border-radius: 5px;background-size: cover; background-repeat: no-repeat;background-position: center;position: relative;}
-.tema_container div.theme_list_item div.caption{position: absolute;bottom: 24px; left:0px;}
+.tema_container div.theme_list_item div.caption{position: absolute;bottom: 24px; left:0px;right:0;}
 
 /*BUTTONS*/
 .slider-btn-hldr-left {left: 80px;}

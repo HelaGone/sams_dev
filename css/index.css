@@ -1,6 +1,6 @@
 /*GLOBAL CSS*/
 
-#main_section{padding:20px 80px;}
+#main_section{padding:36px 80px;}
 #main_section ul{display:flex;justify-content: space-between;margin:0;padding:0;list-style: none;position:relative;}
 #main_section ul li{position:relative;}
 #main_section ul li div.caption{position: absolute;bottom: 24px;left:24px;}
@@ -10,7 +10,7 @@
 
 /*TEMAS CAROUSEL*/
 .temas_container_title{margin-top:60px;color:#fff;}
-.tema_container div.theme_list_item{min-height: 300px;background-image: url(../images/generic.jpg);background-size: cover; background-repeat: no-repeat;background-position: center;position: relative;}
+.tema_container div.theme_list_item{min-height: 300px;position: relative;}
 .tema_container div.theme_list_item div.caption{position: absolute;bottom: 24px; left:24px;}
 
 /*MEDIA QUERIES*/
